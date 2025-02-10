@@ -23,3 +23,9 @@ this repository is for commandline payments application.
 
 ### Allow users to view transaction history.
 >**ViewTransactionsHistory** _[user_id]_
+
+### Allow users to send and receive money through scanning(visual representation of upi id).
+>**MakePayment** [Qr code][upi id]
+
+###Recharge mobile numbers (self and for others)
+>**RechargeMobileNumber** [mobile number][plan]
