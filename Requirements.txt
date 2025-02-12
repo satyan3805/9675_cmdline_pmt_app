@@ -1,0 +1,5 @@
+Autopay
+The user should able to pay for monthly bills with the help of the autopay option where there's no need for him to pay manually and he should get a reminder notification that if he's sure to pay the bill via autopay or the payment is to be cancelled.
+Account Deactivation and Deletion
+the user must be provided with to options Deactivation and Deletion where if he choose Deactivation he can Deactivate his account for certain time as he likes and then he can reactivate it
+where if he choses Deletion of his account the account must be deleted permanently after a short notice period in the notice period the user can retrieve his account back. 
