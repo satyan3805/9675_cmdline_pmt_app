@@ -24,4 +24,15 @@ this repository is for commandline payments application.
 ### Allow users to view transaction history.
 >**ViewTransactionsHistory** _[user_id]_
 
-hello
+### Allow users to make bill payments/Recharges
+>**PayBill** [user_id][bill_type][amount]
+>**RechargeMobile** [phone_number][amount]
+
+### Visual representation of upi id (Qr code) for efficient payments
+>**MakePayment** [qr_code][amount]
+
+### Allow users to send money in different currencies
+>**Global_payment** [phone_number][amount][currency_type]
+
+### Split expenses equally while making a payment
+>**Split_payment** [create_group][add_contacts_into_group][group_name][amount]
