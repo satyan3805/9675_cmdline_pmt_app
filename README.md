@@ -3,23 +3,14 @@
 this repository is for commandline payments application.
 ## Requirements: Create design (class diagram and schema design) and write working code for a command-line payment application that supports the following use cases.
 
-### Allow users to create accounts via their phone number and password.
->**RegisterUser** _[phone_number] [password]_
+### This will allow users to send money to multiple recipients in a single transaction, which could be useful in scenarios like splitting bills or group donations.
+>**CreateGroupTransaction** _[from_user_id] [amount_per_user] [user_phone_numbers]
 
-### Allow users to update their profile details.
->**UpdateUser** _[user_id] [name] [email] [phone_number]_
+### Displays the details of a group payment transaction, including the list of recipients and amounts sent.
+>*ViewGroupTransaction* [transaction_id]
 
-### Send money to another user of the application. (Send money to another phone number)
-**CreateTransaction PAYTM** _[from_user_id] [to_user_id] [amount]_
+### Allow users to request payments from others. This can be useful for scenarios like splitting bills or collecting money for a group activity. The person who receives the request can approve or reject it.
+>**RequestPayment** [from_user_id] [to_user_id] [amount]
 
-### Send money to a bank account.
->**CreateTransaction BANK** _[from_user_id] [account_number] [ifsc_code] [amount]_
-
-### Allow users to make payment for the transaction via Card/ UPI/ Netbanking
->**MakePayment** _[transaction_id] [payment_method] [... details related to payment method ...]_
-
-### Allow users to refund a transaction. The refund amount will go to the original source.
->**RefundTransaction** _[transaction_id]_
-
-### Allow users to view transaction history.
->**ViewTransactionsHistory** _[user_id]_
+### Allow users to set a reminder for upcoming payments or bills. For example, they can set reminders for monthly rent, loan payments, etc., so they don't forget to pay.
+>**SetPaymentReminder** [user_id] [payment_amount] [due_date]
