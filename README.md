@@ -9,4 +9,8 @@ this repository is for commandline payments application.
 ### Displays the details of a group payment transaction, including the list of recipients and amounts sent.
 >*ViewGroupTransaction* [transaction_id]
 
+### Allow users to request payments from others. This can be useful for scenarios like splitting bills or collecting money for a group activity. The person who receives the request can approve or reject it.
+>**RequestPayment** [from_user_id] [to_user_id] [amount]
 
+### Allow users to set a reminder for upcoming payments or bills. For example, they can set reminders for monthly rent, loan payments, etc., so they don't forget to pay.
+>**SetPaymentReminder** [user_id] [payment_amount] [due_date]
